@@ -1,0 +1,7 @@
+app:
+  image: php:7.3
+  command: php -S 0.0.0.0:8000 /var/www/html/index.php
+  ports:
+    - "8000:8000"
+  volumes:
+    - ./app/:/var/www/html
